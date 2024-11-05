@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Akhil Vemulapally</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #1e1e2e;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            margin: 0 20px;
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 120px;
+            margin: 25px 0; /* Adjusts the top and bottom margin */
+            gap: 20px;
+        }
+
+        .picture-container {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .picture-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .skills h2 {
+            font-size: 2em;
+            color: #00ff88;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-category {
+            margin: 20px;
+            flex: 1 1 300px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            color: #00ff88;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category li {
+            margin: 5px 0;
+            color: #ffffff;
+        }
+
+        /* Two column layout for long lists */
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .two-column ul {
+            flex: 1 1 50%;
+            padding: 0 10px;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .experience h2 {
+            font-size: 2em;
+            color: #00ff88;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        .timeline-item h3 {
+            color: #00ff88;
+            font-size: 1.2em;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            color: #00ff88;
+        }
+
+        .contact-icons a {
+            color: #00ff88;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#hero">Me</a>
+        <a href="#skills">Professional Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="picture-container">
+            <img src="Akhil.jpg" alt="Your Picture">
+        </div>
+        <div class="hero-content">
+            <h1>I'M AKHIL VEMULAPALLY</h1>
+            <p id="roles">Java Full Stack Developer</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>01 PROFESSIONAL SKILLS</h2>
+        <div class="skills-list">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java 8/11/17</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Java/J2EE Technologies</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>Servlets</li>
+                        <li>JDBC</li>
+                        <li>JSTL</li>
+                        <li>JSP</li>
+                    </ul>
+                    <ul>
+                        <li>JPA</li>
+                        <li>IBatis</li>
+                        <li>EJB</li>
+                        <li>JMS</li>
+                        <li>JavaBeans</li>
+                        <li>JNDI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Frameworks</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>Spring Core</li>
+                        <li>Spring Batch</li>
+                        <li>Spring Security</li>
+                    </ul>
+                    <ul>
+                        <li>Spring MVC</li>
+                        <li>Struts</li>
+                        <li>Spring Data</li>
+                        <li>Spring Cloud</li>
+                        <li>Hibernate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul>
+                        <li>JSON</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>JavaScript Frameworks</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>React.js</li>
+                        <li>Angular 12 & 16</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <ul>
+                        <li>Vue.js</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Service Frameworks</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>Apache Axis</li>
+                        <li>CXF</li>
+                    </ul>
+                    <ul>
+                        <li>WSDL</li>
+                        <li>JAX-WS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Messaging Services</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>Apache Kafka</li>
+                        <li>RabbitMQ</li>
+                        <li>IBM MQ</li>
+                    </ul>
+                    <ul>
+                        <li>JMS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Architectural Patterns</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>MVC</li>
+                        <li>Microservices</li>
+                    </ul>
+                    <ul>
+                        <li>ORM</li>
+                        <li>SOA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Scripting Languages</h3>
+                <ul>
+                    <li>Bash</li>
+                    <li>Shell Script</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Database Technologies</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>Oracle</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Utilities</h3>
+                <div class="two-column">
+                    <ul>
+                        <li>JIRA</li>
+                        <li>Postman</li>
+                    </ul>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Jenkins</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>02 EXPERIENCE</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Software Engineer at XYZ Corp</h3>
+                <p>June 2022 - Present</p>
+                <p>Developing and maintaining applications using Java, Spring Boot, and Angular.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Intern at ABC Inc</h3>
+                <p>January 2021 - May 2022</p>
+                <p>Assisted in developing web applications and APIs using Java and REST.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>03 CONTACT ME</h2>
+        <div class="contact-icons">
+            <a href="mailto:your-email@example.com">Email</a>
+            <a href="https://github.com/your-github">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a>
+        </div>
+    </section>
+
+</body>
+</html>
